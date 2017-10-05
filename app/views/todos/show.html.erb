@@ -1,2 +1,8 @@
-<h1>Todos#show</h1>
-<p>Find me in app/views/todos/show.html.erb</p>
+<h1>Todo Show Page</h1>
+
+  <%= render @todo %>
+
+<br>
+
+
+<%= link_to "Destroy", @todo, method: :delete, data: { confirm: "Are you sure?" } %>

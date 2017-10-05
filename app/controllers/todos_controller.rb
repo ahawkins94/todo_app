@@ -14,7 +14,7 @@ class TodosController < ApplicationController
 
   def create
 
-    new_todo = current_user.todos.create(book_params)
+    new_todo = current_user.todos.create(todo_params)
     new_todo.save
 
     redirect_to new_todo
@@ -39,7 +39,7 @@ class TodosController < ApplicationController
   end
 
   protected
-  def book_params
+  def todo_params
     params.require(:todo).permit(:title, :item)
   end
 end
