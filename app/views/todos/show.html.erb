@@ -1,11 +1,8 @@
 <h1>Todo Show Page</h1>
 
-<a href="/todos"><button>HOME PAGE</button></a>
+<a href="/todos"><button>HOME PAGE</button><br></a>
 
 
   <%= render @todo %>
 
-<br>
-
-
-<%= link_to "Destroy", @todo, method: :delete, data: { confirm: "Are you sure?" } %>
+<%= link_to "Delete", @todo, method: :delete, data: { confirm: "Are you sure?" } %>

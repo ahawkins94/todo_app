@@ -1,10 +1,10 @@
 
 
-<div>
+<div class="border">
 	<p><strong><%= todo.title %></strong></p>
-	<p><strong><%= todo.item %></strong></p>
-
-	<br>
-  	<%= link_to "Show Page", todo if action_name == "index" %> 
+	<p><%= todo.item %></p>
+  	<%= link_to "Show Page", todo if action_name == "index" %> |
   	<%= link_to "Edit Page", edit_todo_path(todo) %>
 </div>
+
+<br>
